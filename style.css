@@ -1,0 +1,111 @@
+:root {
+  color-scheme: light;
+  background: #fff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior-x: none;
+  touch-action: pan-y;
+}
+
+body { background: #fff; }
+
+.ocean {
+  height: 100vh;
+  height: 100svh;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
+  place-items: center;
+  gap: clamp(16px, 3vh, 32px);
+  padding: clamp(18px, 4.2vw, 80px);
+}
+
+.school-frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  container-type: size;
+  overflow: clip;
+}
+
+.school {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 100%;
+  max-width: 1500px;
+  min-height: 0;
+  max-height: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: translate(-50%, -50%);
+  user-select: none;
+}
+
+@media (aspect-ratio < 1/1) {
+  .school {
+    width: 100cqh;
+    height: 100cqw;
+    max-width: none;
+    max-height: none;
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+}
+
+.proverb {
+  margin: 0;
+  max-width: 100%;
+  color: #182d49;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 1.6;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.fonts-loading .proverb { visibility: hidden; }
+
+@media (max-width: 900px) {
+  .proverb { font-size: 28px; }
+}
+
+@media (max-width: 700px) {
+  .proverb { font-size: 20px; }
+}
+
+@media (max-width: 500px) {
+  .proverb { font-size: 14px; }
+}
+
+@media (max-width: 350px) {
+  .proverb { font-size: 12px; }
+}
+
+@media (max-width: 600px) {
+  .ocean { padding: 20px 12px; }
+}
+
+@media print {
+  @page { size: landscape; margin: 12mm; }
+  .ocean { height: auto; padding: 0; }
+  .school-frame { height: auto; container-type: normal; }
+  .school {
+    position: static;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: none;
+    transform: none;
+  }
+}

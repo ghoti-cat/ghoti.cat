@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="260" viewBox="0 -82 260 260">
+<defs>
+<clipPath id="08-reed-body"><path d="M54 48 C101 8 191 3 253 46 C207 85 116 94 54 48Z" /></clipPath>
+<clipPath id="08-reed-tail"><path d="M59 48 Q30 20 5 10 L18 47 L5 86 Q34 77 59 48Z" /></clipPath>
+</defs>
+<g clip-path="url(#08-reed-tail)" fill="#72adbb">
+<path d="M59 48 Q30 20 5 10 L18 47 L5 86 Q34 77 59 48Z" />
+<g fill="none" stroke="#edf8f8" stroke-width="2.1"><path d="M55 48 Q29 23 9 23" /><path d="M55 48 Q29 36 9 36" /><path d="M55 48 Q29 62 9 62" /><path d="M55 48 Q29 74 9 74" /></g>
+</g>
+<g clip-path="url(#08-reed-body)" fill="#72adbb">
+<path d="M54 48 C101 8 191 3 253 46 C207 85 116 94 54 48Z" />
+<g fill="none" stroke="#edf8f8" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"><path d="M60 93 Q78 46 69 3 M69 44 L58 29 M69 59 L80 43" /><path d="M79 93 Q97 46 88 3 M88 44 L77 29 M88 59 L99 43" /><path d="M98 93 Q116 46 107 3 M107 44 L96 29 M107 59 L118 43" /><path d="M117 93 Q135 46 126 3 M126 44 L115 29 M126 59 L137 43" /><path d="M136 93 Q154 46 145 3 M145 44 L134 29 M145 59 L156 43" /><path d="M155 93 Q173 46 164 3 M164 44 L153 29 M164 59 L175 43" /><path d="M174 93 Q192 46 183 3 M183 44 L172 29 M183 59 L194 43" /><path d="M193 93 Q211 46 202 3 M202 44 L191 29 M202 59 L213 43" /></g>
+<path d="M203 17 Q195 46 211 71 Q237 61 253 46 Q231 27 203 17Z" fill="#72adbb"/>
+<path d="M203 17 Q195 46 211 71" fill="none" stroke="#edf8f8" stroke-width="2.3"/>
+<circle cx="222" cy="40" r="4.4" fill="white"/>
+</g>
+</svg>
